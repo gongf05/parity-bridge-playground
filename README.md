@@ -1,3 +1,13 @@
+# flow chart
+
+Example: Parity bridge deployed between ropsten and kovan (poa) network as https://github.com/paritytech/parity-bridge/blob/snd-user-guide/user_guide.md 
+
+- bridge contract deployed on Ropsten network, which accepts Ether deposit.
+- off-chain bridge: receive the deposit event message from Bridge contract and trigger the mining transaction on Kovan
+- bridge token contract: it is ERC20 contract deployed on Kovan POA network. It mints new tokens for sender account. 
+
+<img src='flow.jpg'>
+
 # End-To-End Testing
 
 Run end-to-end testing:
